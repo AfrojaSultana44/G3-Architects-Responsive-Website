@@ -295,6 +295,24 @@ main {
   filter: grayscale(100%);
 }
 
+/* footer styles */
+.footer{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 39px 0;
+    text-align: center;
+    background-color: #FFF4E7;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.footer-text{
+    color: rgba(66, 66, 66, 1);
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+
 /* responsive media query */
 
 /* responsive media query for small devices */
