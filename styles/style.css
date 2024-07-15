@@ -42,11 +42,19 @@
 
 nav ul {
   display: flex;
-  gap: 50px;
 }
 
 nav ul li {
   list-style: none;
+  padding: 20px;
+}
+
+nav ul li:first-child {
+  padding-left: 0;
+}
+
+nav ul li:last-child {
+  padding-right: 0;
 }
 
 nav ul li a {
@@ -120,6 +128,7 @@ main {
 }
 
 .team-img-container img {
+  width: 100%;
   border-radius: 8px;
 }
 
@@ -151,6 +160,53 @@ main {
   padding-bottom: 32px;
 }
 
+/* some facts related styles */
+.facts-title {
+  color: rgba(19, 19, 19, 1);
+  font: bold;
+  font-size: 2.8rem;
+  padding-bottom: 24px;
+}
+
+.facts-description {
+  color: rgba(114, 114, 114, 1);
+  padding-bottom: 100px;
+  max-width: 540px;
+}
+
+.facts-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  padding: 0px 20px;
+}
+
+.fact-card {
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.fact-number {
+  font-weight: 600;
+  font-size: 2.8rem;
+  color: rgba(66, 66, 66, 1);
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.fact-name {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: rgba(114, 114, 114, 1);
+  margin-top: 10px;
+}
+
 /* responsive media query */
 
 /* responsive media query for small devices */
@@ -163,6 +219,10 @@ main {
     flex-direction: column;
   }
 
+  nav ul li {
+    padding: 20px 0px;
+  }
+
   .teams {
     flex-direction: column;
   }
@@ -172,25 +232,23 @@ main {
     margin-bottom: 30px;
   }
 
-  .our-features{
+  .our-features {
     margin-left: 20px;
+  }
+
+  .facts-container {
+    grid-template-columns: 1fr;
   }
 }
 
-
 /* responsive media query for medium devices */
-@media screen and (min-width: 576px) and (max-width: 992px) {
-    
-    .teams{
-        flex-direction: column;
-    }
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .teams {
+    flex-direction: column;
+  }
 
-    .our-features{
-        padding: 0;
-        margin: 50px auto;
-    }
+  .our-features {
+    padding: 0;
+    margin: 50px auto;
+  }
 }
-
-
-
-
